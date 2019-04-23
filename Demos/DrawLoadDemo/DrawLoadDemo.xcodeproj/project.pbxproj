@@ -1,0 +1,979 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623EC0D0F72F000981E51 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		2D500B9A0D5A79CF00DBA0E3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D500B990D5A79CF00DBA0E3 /* QuartzCore.framework */; };
+		A900B1A31B5EAA1C00150D60 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A900B1A21B5EAA1C00150D60 /* libc++.dylib */; };
+		A90857181B88201E00B1E2F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A90857161B88201E00B1E2F1 /* Main.storyboard */; };
+		A90857191B88201E00B1E2F1 /* macOS.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A90857171B88201E00B1E2F1 /* macOS.xcassets */; };
+		A908571F1B88202800B1E2F1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A908571B1B88202800B1E2F1 /* Default-568h@2x.png */; };
+		A90857201B88202800B1E2F1 /* Default~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = A908571C1B88202800B1E2F1 /* Default~ipad.png */; };
+		A90857211B88202800B1E2F1 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A908571D1B88202800B1E2F1 /* Icon.png */; };
+		A90857221B88202800B1E2F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A908571E1B88202800B1E2F1 /* Main.storyboard */; };
+		A91560111B6AD8D8005640E3 /* MGLPVRShell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A915600F1B6AD8D8005640E3 /* MGLPVRShell.cpp */; };
+		A91560121B6AD8D8005640E3 /* MGLPVRShell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A915600F1B6AD8D8005640E3 /* MGLPVRShell.cpp */; };
+		A9272C681B5EF26C0041A6E5 /* PVRTBackground.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C201B5EF26C0041A6E5 /* PVRTBackground.cpp */; };
+		A9272C691B5EF26C0041A6E5 /* PVRTgles2Ext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C231B5EF26C0041A6E5 /* PVRTgles2Ext.cpp */; };
+		A9272C6A1B5EF26C0041A6E5 /* PVRTPFXParserAPI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C251B5EF26C0041A6E5 /* PVRTPFXParserAPI.cpp */; };
+		A9272C6B1B5EF26C0041A6E5 /* PVRTPFXSemantics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C271B5EF26C0041A6E5 /* PVRTPFXSemantics.cpp */; };
+		A9272C6C1B5EF26C0041A6E5 /* PVRTPrint3DAPI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C291B5EF26C0041A6E5 /* PVRTPrint3DAPI.cpp */; };
+		A9272C6D1B5EF26C0041A6E5 /* PVRTShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C2B1B5EF26C0041A6E5 /* PVRTShader.cpp */; };
+		A9272C6E1B5EF26C0041A6E5 /* PVRTTextureAPI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C2D1B5EF26C0041A6E5 /* PVRTTextureAPI.cpp */; };
+		A9272C6F1B5EF26C0041A6E5 /* PVRTBoneBatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C311B5EF26C0041A6E5 /* PVRTBoneBatch.cpp */; };
+		A9272C701B5EF26C0041A6E5 /* PVRTDecompress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C331B5EF26C0041A6E5 /* PVRTDecompress.cpp */; };
+		A9272C711B5EF26C0041A6E5 /* PVRTError.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C351B5EF26C0041A6E5 /* PVRTError.cpp */; };
+		A9272C721B5EF26C0041A6E5 /* PVRTFixedPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C371B5EF26C0041A6E5 /* PVRTFixedPoint.cpp */; };
+		A9272C731B5EF26C0041A6E5 /* PVRTGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C391B5EF26C0041A6E5 /* PVRTGeometry.cpp */; };
+		A9272C741B5EF26C0041A6E5 /* PVRTMatrixF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C401B5EF26C0041A6E5 /* PVRTMatrixF.cpp */; };
+		A9272C751B5EF26C0041A6E5 /* PVRTMatrixX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C411B5EF26C0041A6E5 /* PVRTMatrixX.cpp */; };
+		A9272C761B5EF26C0041A6E5 /* PVRTMisc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C431B5EF26C0041A6E5 /* PVRTMisc.cpp */; };
+		A9272C771B5EF26C0041A6E5 /* PVRTModelPOD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C451B5EF26C0041A6E5 /* PVRTModelPOD.cpp */; };
+		A9272C781B5EF26C0041A6E5 /* PVRTPFXParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C481B5EF26C0041A6E5 /* PVRTPFXParser.cpp */; };
+		A9272C791B5EF26C0041A6E5 /* PVRTPrint3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C4A1B5EF26C0041A6E5 /* PVRTPrint3D.cpp */; };
+		A9272C7A1B5EF26C0041A6E5 /* PVRTQuaternionF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C4F1B5EF26C0041A6E5 /* PVRTQuaternionF.cpp */; };
+		A9272C7B1B5EF26C0041A6E5 /* PVRTQuaternionX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C501B5EF26C0041A6E5 /* PVRTQuaternionX.cpp */; };
+		A9272C7C1B5EF26C0041A6E5 /* PVRTResourceFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C511B5EF26C0041A6E5 /* PVRTResourceFile.cpp */; };
+		A9272C7D1B5EF26C0041A6E5 /* PVRTShadowVol.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C531B5EF26C0041A6E5 /* PVRTShadowVol.cpp */; };
+		A9272C7E1B5EF26C0041A6E5 /* PVRTString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C571B5EF26C0041A6E5 /* PVRTString.cpp */; };
+		A9272C7F1B5EF26C0041A6E5 /* PVRTStringHash.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C591B5EF26C0041A6E5 /* PVRTStringHash.cpp */; };
+		A9272C801B5EF26C0041A6E5 /* PVRTTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C5B1B5EF26C0041A6E5 /* PVRTTexture.cpp */; };
+		A9272C811B5EF26C0041A6E5 /* PVRTTrans.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C5D1B5EF26C0041A6E5 /* PVRTTrans.cpp */; };
+		A9272C821B5EF26C0041A6E5 /* PVRTTriStrip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C5F1B5EF26C0041A6E5 /* PVRTTriStrip.cpp */; };
+		A9272C831B5EF26C0041A6E5 /* PVRTUnicode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C611B5EF26C0041A6E5 /* PVRTUnicode.cpp */; };
+		A9272C841B5EF26C0041A6E5 /* PVRTVector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C631B5EF26C0041A6E5 /* PVRTVector.cpp */; };
+		A9272C851B5EF26C0041A6E5 /* PVRTVertex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C651B5EF26C0041A6E5 /* PVRTVertex.cpp */; };
+		A92FDC931B6B0072005700A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A92FDC921B6B0072005700A4 /* AppDelegate.m */; };
+		A92FDC9E1B6B114D005700A4 /* DemoViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = A92FDC9D1B6B114D005700A4 /* DemoViewController.mm */; };
+		A93BF75E1B974C9F00284723 /* isosphere-320-tris.pod in Resources */ = {isa = PBXBuildFile; fileRef = A93BF75D1B974C9F00284723 /* isosphere-320-tris.pod */; };
+		A93BF75F1B974C9F00284723 /* isosphere-320-tris.pod in Resources */ = {isa = PBXBuildFile; fileRef = A93BF75D1B974C9F00284723 /* isosphere-320-tris.pod */; };
+		A93BF7611B97522200284723 /* isosphere-1280-tris.pod in Resources */ = {isa = PBXBuildFile; fileRef = A93BF7601B97522200284723 /* isosphere-1280-tris.pod */; };
+		A93BF7621B97522200284723 /* isosphere-1280-tris.pod in Resources */ = {isa = PBXBuildFile; fileRef = A93BF7601B97522200284723 /* isosphere-1280-tris.pod */; };
+		A94A67251B7BDE9B00F6D7C4 /* MoltenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94A67231B7BDE9B00F6D7C4 /* MoltenGL.framework */; };
+		A94A67261B7BDE9B00F6D7C4 /* MoltenGLShaderConverter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94A67241B7BDE9B00F6D7C4 /* MoltenGLShaderConverter.framework */; };
+		A94A67291B7BDEC600F6D7C4 /* MoltenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94A67271B7BDEC600F6D7C4 /* MoltenGL.framework */; };
+		A94A672A1B7BDEC600F6D7C4 /* MoltenGLShaderConverter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94A67281B7BDEC600F6D7C4 /* MoltenGLShaderConverter.framework */; };
+		A9555ED31B6AD6CF00A145DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9555ECB1B6AD6CF00A145DE /* AppDelegate.m */; };
+		A9555ED41B6AD6CF00A145DE /* DemoViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9555ECD1B6AD6CF00A145DE /* DemoViewController.mm */; };
+		A9555ED51B6AD6CF00A145DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9555ECE1B6AD6CF00A145DE /* main.m */; };
+		A9555ED61B6AD6CF00A145DE /* PVRShellAPI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9555ECF1B6AD6CF00A145DE /* PVRShellAPI.cpp */; };
+		A9555ED71B6AD6CF00A145DE /* PVRShellOS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9555ED11B6AD6CF00A145DE /* PVRShellOS.cpp */; };
+		A9555EE51B6AD70100A145DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9555EDD1B6AD70100A145DE /* main.m */; };
+		A9555EE61B6AD70100A145DE /* PVRShellAPI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9555EDE1B6AD70100A145DE /* PVRShellAPI.cpp */; };
+		A9555EE71B6AD70100A145DE /* PVRShellOS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9555EE01B6AD70100A145DE /* PVRShellOS.cpp */; };
+		A973D5091B56C2C500AB3578 /* PVRShell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A973D4FE1B56C2C500AB3578 /* PVRShell.cpp */; };
+		A977BCCA1B66BB010067E5BF /* PVRTUnicode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C611B5EF26C0041A6E5 /* PVRTUnicode.cpp */; };
+		A977BCCB1B66BB010067E5BF /* PVRTResourceFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C511B5EF26C0041A6E5 /* PVRTResourceFile.cpp */; };
+		A977BCCC1B66BB010067E5BF /* PVRTString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C571B5EF26C0041A6E5 /* PVRTString.cpp */; };
+		A977BCCD1B66BB010067E5BF /* PVRTShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C2B1B5EF26C0041A6E5 /* PVRTShader.cpp */; };
+		A977BCCE1B66BB010067E5BF /* PVRTMisc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C431B5EF26C0041A6E5 /* PVRTMisc.cpp */; };
+		A977BCCF1B66BB010067E5BF /* PVRTModelPOD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C451B5EF26C0041A6E5 /* PVRTModelPOD.cpp */; };
+		A977BCD01B66BB010067E5BF /* PVRTFixedPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C371B5EF26C0041A6E5 /* PVRTFixedPoint.cpp */; };
+		A977BCD11B66BB010067E5BF /* PVRTMatrixX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C411B5EF26C0041A6E5 /* PVRTMatrixX.cpp */; };
+		A977BCD21B66BB010067E5BF /* PVRTGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C391B5EF26C0041A6E5 /* PVRTGeometry.cpp */; };
+		A977BCD41B66BB010067E5BF /* PVRTPFXParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C481B5EF26C0041A6E5 /* PVRTPFXParser.cpp */; };
+		A977BCD51B66BB010067E5BF /* PVRTTrans.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C5D1B5EF26C0041A6E5 /* PVRTTrans.cpp */; };
+		A977BCD61B66BB010067E5BF /* PVRTPrint3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C4A1B5EF26C0041A6E5 /* PVRTPrint3D.cpp */; };
+		A977BCD71B66BB010067E5BF /* PVRTDecompress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C331B5EF26C0041A6E5 /* PVRTDecompress.cpp */; };
+		A977BCD81B66BB010067E5BF /* PVRTError.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C351B5EF26C0041A6E5 /* PVRTError.cpp */; };
+		A977BCD91B66BB010067E5BF /* PVRTgles2Ext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C231B5EF26C0041A6E5 /* PVRTgles2Ext.cpp */; };
+		A977BCDB1B66BB010067E5BF /* PVRTTriStrip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C5F1B5EF26C0041A6E5 /* PVRTTriStrip.cpp */; };
+		A977BCDC1B66BB010067E5BF /* PVRShell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A973D4FE1B56C2C500AB3578 /* PVRShell.cpp */; };
+		A977BCDD1B66BB010067E5BF /* PVRTBoneBatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C311B5EF26C0041A6E5 /* PVRTBoneBatch.cpp */; };
+		A977BCDE1B66BB010067E5BF /* PVRTVertex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C651B5EF26C0041A6E5 /* PVRTVertex.cpp */; };
+		A977BCDF1B66BB010067E5BF /* PVRTQuaternionX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C501B5EF26C0041A6E5 /* PVRTQuaternionX.cpp */; };
+		A977BCE01B66BB010067E5BF /* PVRTPrint3DAPI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C291B5EF26C0041A6E5 /* PVRTPrint3DAPI.cpp */; };
+		A977BCE21B66BB010067E5BF /* PVRTQuaternionF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C4F1B5EF26C0041A6E5 /* PVRTQuaternionF.cpp */; };
+		A977BCE51B66BB010067E5BF /* PVRTTextureAPI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C2D1B5EF26C0041A6E5 /* PVRTTextureAPI.cpp */; };
+		A977BCE61B66BB010067E5BF /* PVRTTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C5B1B5EF26C0041A6E5 /* PVRTTexture.cpp */; };
+		A977BCE71B66BB010067E5BF /* PVRTPFXSemantics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C271B5EF26C0041A6E5 /* PVRTPFXSemantics.cpp */; };
+		A977BCE81B66BB010067E5BF /* PVRTStringHash.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C591B5EF26C0041A6E5 /* PVRTStringHash.cpp */; };
+		A977BCE91B66BB010067E5BF /* PVRTShadowVol.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C531B5EF26C0041A6E5 /* PVRTShadowVol.cpp */; };
+		A977BCEC1B66BB010067E5BF /* PVRTVector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C631B5EF26C0041A6E5 /* PVRTVector.cpp */; };
+		A977BCED1B66BB010067E5BF /* PVRTMatrixF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C401B5EF26C0041A6E5 /* PVRTMatrixF.cpp */; };
+		A977BCEF1B66BB010067E5BF /* PVRTPFXParserAPI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C251B5EF26C0041A6E5 /* PVRTPFXParserAPI.cpp */; };
+		A977BCF01B66BB010067E5BF /* PVRTBackground.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9272C201B5EF26C0041A6E5 /* PVRTBackground.cpp */; };
+		A977BD271B67186B0067E5BF /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A977BD211B67186B0067E5BF /* AppKit.framework */; };
+		A977BD281B67186B0067E5BF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A977BD221B67186B0067E5BF /* CoreGraphics.framework */; };
+		A977BD291B67186B0067E5BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A977BD231B67186B0067E5BF /* Foundation.framework */; };
+		A977BD2B1B67186B0067E5BF /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A977BD251B67186B0067E5BF /* Metal.framework */; };
+		A977BD2C1B67186B0067E5BF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A977BD261B67186B0067E5BF /* QuartzCore.framework */; };
+		A9A222181B5D69F40050A5F9 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A222171B5D69F40050A5F9 /* Metal.framework */; };
+		A9CD1E831B8B7E9800FF0551 /* FragShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A9CD1E7B1B8B7E9800FF0551 /* FragShader.fsh */; };
+		A9CD1E841B8B7E9800FF0551 /* FragShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A9CD1E7B1B8B7E9800FF0551 /* FragShader.fsh */; };
+		A9CD1E891B8B7E9800FF0551 /* VertShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = A9CD1E7E1B8B7E9800FF0551 /* VertShader.vsh */; };
+		A9CD1E8A1B8B7E9800FF0551 /* VertShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = A9CD1E7E1B8B7E9800FF0551 /* VertShader.vsh */; };
+		A9CD1E8B1B8B7E9800FF0551 /* DrawLoadDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9CD1E801B8B7E9800FF0551 /* DrawLoadDemo.cpp */; };
+		A9CD1E8C1B8B7E9800FF0551 /* DrawLoadDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9CD1E801B8B7E9800FF0551 /* DrawLoadDemo.cpp */; };
+		A9CD1E8D1B8B7E9800FF0551 /* ParticleSystemCPU.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9CD1E811B8B7E9800FF0551 /* ParticleSystemCPU.cpp */; };
+		A9CD1E8E1B8B7E9800FF0551 /* ParticleSystemCPU.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9CD1E811B8B7E9800FF0551 /* ParticleSystemCPU.cpp */; };
+		A9CDEA281B6A782C00F7B008 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9CDEA271B6A782C00F7B008 /* GLKit.framework */; };
+		A9E264771B671B0A00FE691A /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E264761B671B0A00FE691A /* libc++.dylib */; };
+		A9E8B9891B85221B003B268F /* EAGL.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E8B9851B85221B003B268F /* EAGL.m */; };
+		A9E8B98A1B85221B003B268F /* egl.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E8B9861B85221B003B268F /* egl.m */; };
+		A9E8B98B1B85221B003B268F /* gl.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E8B9871B85221B003B268F /* gl.m */; };
+		A9E8B98C1B85221B003B268F /* glext.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E8B9881B85221B003B268F /* glext.m */; };
+		A9F809301B90EB62002B6CA2 /* isosphere-80-tris.pod in Resources */ = {isa = PBXBuildFile; fileRef = A9F8092D1B90EB62002B6CA2 /* isosphere-80-tris.pod */; };
+		A9F809311B90EB62002B6CA2 /* isosphere-80-tris.pod in Resources */ = {isa = PBXBuildFile; fileRef = A9F8092D1B90EB62002B6CA2 /* isosphere-80-tris.pod */; };
+		BA240AC20FEFE77A00DE852D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA240AC10FEFE77A00DE852D /* OpenGLES.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A927AFA71B671CFA004EDBCF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1D6058910D05DD3D006BFB54 /* DrawLoadDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawLoadDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2D500B990D5A79CF00DBA0E3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A900B1A21B5EAA1C00150D60 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		A90857161B88201E00B1E2F1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A90857171B88201E00B1E2F1 /* macOS.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = macOS.xcassets; sourceTree = "<group>"; };
+		A908571B1B88202800B1E2F1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A908571C1B88202800B1E2F1 /* Default~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~ipad.png"; sourceTree = "<group>"; };
+		A908571D1B88202800B1E2F1 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		A908571E1B88202800B1E2F1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A915600F1B6AD8D8005640E3 /* MGLPVRShell.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MGLPVRShell.cpp; sourceTree = "<group>"; };
+		A91560101B6AD8D8005640E3 /* MGLPVRShell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGLPVRShell.h; sourceTree = "<group>"; };
+		A9272C1F1B5EF26C0041A6E5 /* OGLES2Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGLES2Tools.h; sourceTree = "<group>"; };
+		A9272C201B5EF26C0041A6E5 /* PVRTBackground.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVRTBackground.cpp; sourceTree = "<group>"; };
+		A9272C211B5EF26C0041A6E5 /* PVRTBackgroundShaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTBackgroundShaders.h; sourceTree = "<group>"; };
+		A9272C221B5EF26C0041A6E5 /* PVRTContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTContext.h; sourceTree = "<group>"; };
+		A9272C231B5EF26C0041A6E5 /* PVRTgles2Ext.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVRTgles2Ext.cpp; sourceTree = "<group>"; };
+		A9272C241B5EF26C0041A6E5 /* PVRTgles2Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTgles2Ext.h; sourceTree = "<group>"; };
+		A9272C251B5EF26C0041A6E5 /* PVRTPFXParserAPI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVRTPFXParserAPI.cpp; sourceTree = "<group>"; };
+		A9272C261B5EF26C0041A6E5 /* PVRTPFXParserAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTPFXParserAPI.h; sourceTree = "<group>"; };
+		A9272C271B5EF26C0041A6E5 /* PVRTPFXSemantics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVRTPFXSemantics.cpp; sourceTree = "<group>"; };
+		A9272C281B5EF26C0041A6E5 /* PVRTPFXSemantics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTPFXSemantics.h; sourceTree = "<group>"; };
+		A9272C291B5EF26C0041A6E5 /* PVRTPrint3DAPI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVRTPrint3DAPI.cpp; sourceTree = "<group>"; };
+		A9272C2A1B5EF26C0041A6E5 /* PVRTPrint3DShaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTPrint3DShaders.h; sourceTree = "<group>"; };
+		A9272C2B1B5EF26C0041A6E5 /* PVRTShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVRTShader.cpp; sourceTree = "<group>"; };
+		A9272C2C1B5EF26C0041A6E5 /* PVRTShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTShader.h; sourceTree = "<group>"; };
+		A9272C2D1B5EF26C0041A6E5 /* PVRTTextureAPI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVRTTextureAPI.cpp; sourceTree = "<group>"; };
+		A9272C2E1B5EF26C0041A6E5 /* PVRTTextureAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTTextureAPI.h; sourceTree = "<group>"; };
+		A9272C2F1B5EF26C0041A6E5 /* PVRTArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTArray.h; sourceTree = "<group>"; };
+		A9272C301B5EF26C0041A6E5 /* PVRTBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTBackground.h; sourceTree = "<group>"; };
+		A9272C311B5EF26C0041A6E5 /* PVRTBoneBatch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVRTBoneBatch.cpp; sourceTree = "<group>"; };
+		A9272C321B5EF26C0041A6E5 /* PVRTBoneBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTBoneBatch.h; sourceTree = "<group>"; };
+		A9272C331B5EF26C0041A6E5 /* PVRTDecompress.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVRTDecompress.cpp; sourceTree = "<group>"; };
+		A9272C341B5EF26C0041A6E5 /* PVRTDecompress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTDecompress.h; sourceTree = "<group>"; };
+		A9272C351B5EF26C0041A6E5 /* PVRTError.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVRTError.cpp; sourceTree = "<group>"; };
+		A9272C361B5EF26C0041A6E5 /* PVRTError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTError.h; sourceTree = "<group>"; };
+		A9272C371B5EF26C0041A6E5 /* PVRTFixedPoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVRTFixedPoint.cpp; sourceTree = "<group>"; };
+		A9272C381B5EF26C0041A6E5 /* PVRTFixedPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTFixedPoint.h; sourceTree = "<group>"; };
+		A9272C391B5EF26C0041A6E5 /* PVRTGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVRTGeometry.cpp; sourceTree = "<group>"; };
+		A9272C3A1B5EF26C0041A6E5 /* PVRTGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTGeometry.h; sourceTree = "<group>"; };
+		A9272C3B1B5EF26C0041A6E5 /* PVRTGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTGlobal.h; sourceTree = "<group>"; };
+		A9272C3C1B5EF26C0041A6E5 /* PVRTHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTHash.h; sourceTree = "<group>"; };
+		A9272C3D1B5EF26C0041A6E5 /* PVRTMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTMap.h; sourceTree = "<group>"; };
+		A9272C3E1B5EF26C0041A6E5 /* PVRTMathTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTMathTable.h; sourceTree = "<group>"; };
+		A9272C3F1B5EF26C0041A6E5 /* PVRTMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTMatrix.h; sourceTree = "<group>"; };
+		A9272C401B5EF26C0041A6E5 /* PVRTMatrixF.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVRTMatrixF.cpp; sourceTree = "<group>"; };
+		A9272C411B5EF26C0041A6E5 /* PVRTMatrixX.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVRTMatrixX.cpp; sourceTree = "<group>"; };
+		A9272C421B5EF26C0041A6E5 /* PVRTMemoryFileSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTMemoryFileSystem.h; sourceTree = "<group>"; };
+		A9272C431B5EF26C0041A6E5 /* PVRTMisc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVRTMisc.cpp; sourceTree = "<group>"; };
+		A9272C441B5EF26C0041A6E5 /* PVRTMisc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTMisc.h; sourceTree = "<group>"; };
+		A9272C451B5EF26C0041A6E5 /* PVRTModelPOD.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVRTModelPOD.cpp; sourceTree = "<group>"; };
+		A9272C461B5EF26C0041A6E5 /* PVRTModelPOD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTModelPOD.h; sourceTree = "<group>"; };
+		A9272C471B5EF26C0041A6E5 /* PVRTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTools.h; sourceTree = "<group>"; };
+		A9272C481B5EF26C0041A6E5 /* PVRTPFXParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVRTPFXParser.cpp; sourceTree = "<group>"; };
+		A9272C491B5EF26C0041A6E5 /* PVRTPFXParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTPFXParser.h; sourceTree = "<group>"; };
+		A9272C4A1B5EF26C0041A6E5 /* PVRTPrint3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVRTPrint3D.cpp; sourceTree = "<group>"; };
+		A9272C4B1B5EF26C0041A6E5 /* PVRTPrint3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTPrint3D.h; sourceTree = "<group>"; };
+		A9272C4C1B5EF26C0041A6E5 /* PVRTPrint3DHelveticaBold.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTPrint3DHelveticaBold.h; sourceTree = "<group>"; };
+		A9272C4D1B5EF26C0041A6E5 /* PVRTPrint3DIMGLogo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTPrint3DIMGLogo.h; sourceTree = "<group>"; };
+		A9272C4E1B5EF26C0041A6E5 /* PVRTQuaternion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTQuaternion.h; sourceTree = "<group>"; };
+		A9272C4F1B5EF26C0041A6E5 /* PVRTQuaternionF.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVRTQuaternionF.cpp; sourceTree = "<group>"; };
+		A9272C501B5EF26C0041A6E5 /* PVRTQuaternionX.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVRTQuaternionX.cpp; sourceTree = "<group>"; };
+		A9272C511B5EF26C0041A6E5 /* PVRTResourceFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVRTResourceFile.cpp; sourceTree = "<group>"; };
+		A9272C521B5EF26C0041A6E5 /* PVRTResourceFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTResourceFile.h; sourceTree = "<group>"; };
+		A9272C531B5EF26C0041A6E5 /* PVRTShadowVol.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVRTShadowVol.cpp; sourceTree = "<group>"; };
+		A9272C541B5EF26C0041A6E5 /* PVRTShadowVol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTShadowVol.h; sourceTree = "<group>"; };
+		A9272C551B5EF26C0041A6E5 /* PVRTSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTSingleton.h; sourceTree = "<group>"; };
+		A9272C561B5EF26C0041A6E5 /* PVRTSkipGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTSkipGraph.h; sourceTree = "<group>"; };
+		A9272C571B5EF26C0041A6E5 /* PVRTString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVRTString.cpp; sourceTree = "<group>"; };
+		A9272C581B5EF26C0041A6E5 /* PVRTString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTString.h; sourceTree = "<group>"; };
+		A9272C591B5EF26C0041A6E5 /* PVRTStringHash.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVRTStringHash.cpp; sourceTree = "<group>"; };
+		A9272C5A1B5EF26C0041A6E5 /* PVRTStringHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTStringHash.h; sourceTree = "<group>"; };
+		A9272C5B1B5EF26C0041A6E5 /* PVRTTexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVRTTexture.cpp; sourceTree = "<group>"; };
+		A9272C5C1B5EF26C0041A6E5 /* PVRTTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTTexture.h; sourceTree = "<group>"; };
+		A9272C5D1B5EF26C0041A6E5 /* PVRTTrans.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVRTTrans.cpp; sourceTree = "<group>"; };
+		A9272C5E1B5EF26C0041A6E5 /* PVRTTrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTTrans.h; sourceTree = "<group>"; };
+		A9272C5F1B5EF26C0041A6E5 /* PVRTTriStrip.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVRTTriStrip.cpp; sourceTree = "<group>"; };
+		A9272C601B5EF26C0041A6E5 /* PVRTTriStrip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTTriStrip.h; sourceTree = "<group>"; };
+		A9272C611B5EF26C0041A6E5 /* PVRTUnicode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVRTUnicode.cpp; sourceTree = "<group>"; };
+		A9272C621B5EF26C0041A6E5 /* PVRTUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTUnicode.h; sourceTree = "<group>"; };
+		A9272C631B5EF26C0041A6E5 /* PVRTVector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVRTVector.cpp; sourceTree = "<group>"; };
+		A9272C641B5EF26C0041A6E5 /* PVRTVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTVector.h; sourceTree = "<group>"; };
+		A9272C651B5EF26C0041A6E5 /* PVRTVertex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVRTVertex.cpp; sourceTree = "<group>"; };
+		A9272C661B5EF26C0041A6E5 /* PVRTVertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRTVertex.h; sourceTree = "<group>"; };
+		A9272C671B5EF26C0041A6E5 /* sdkver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sdkver.h; sourceTree = "<group>"; };
+		A92FDC911B6B0072005700A4 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A92FDC921B6B0072005700A4 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A92FDC9C1B6B114D005700A4 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		A92FDC9D1B6B114D005700A4 /* DemoViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DemoViewController.mm; sourceTree = "<group>"; };
+		A93BF75D1B974C9F00284723 /* isosphere-320-tris.pod */ = {isa = PBXFileReference; lastKnownFileType = file; path = "isosphere-320-tris.pod"; sourceTree = "<group>"; };
+		A93BF7601B97522200284723 /* isosphere-1280-tris.pod */ = {isa = PBXFileReference; lastKnownFileType = file; path = "isosphere-1280-tris.pod"; sourceTree = "<group>"; };
+		A94A67231B7BDE9B00F6D7C4 /* MoltenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MoltenGL.framework; path = ../../MoltenGL/macOS/MoltenGL.framework; sourceTree = "<group>"; };
+		A94A67241B7BDE9B00F6D7C4 /* MoltenGLShaderConverter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MoltenGLShaderConverter.framework; path = ../../MoltenGLShaderConverter/macOS/MoltenGLShaderConverter.framework; sourceTree = "<group>"; };
+		A94A67271B7BDEC600F6D7C4 /* MoltenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MoltenGL.framework; path = ../../MoltenGL/iOS/MoltenGL.framework; sourceTree = "<group>"; };
+		A94A67281B7BDEC600F6D7C4 /* MoltenGLShaderConverter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MoltenGLShaderConverter.framework; path = ../../MoltenGLShaderConverter/iOS/MoltenGLShaderConverter.framework; sourceTree = "<group>"; };
+		A9555ECA1B6AD6CF00A145DE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A9555ECB1B6AD6CF00A145DE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A9555ECC1B6AD6CF00A145DE /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		A9555ECD1B6AD6CF00A145DE /* DemoViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DemoViewController.mm; sourceTree = "<group>"; };
+		A9555ECE1B6AD6CF00A145DE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A9555ECF1B6AD6CF00A145DE /* PVRShellAPI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVRShellAPI.cpp; sourceTree = "<group>"; };
+		A9555ED01B6AD6CF00A145DE /* PVRShellAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRShellAPI.h; sourceTree = "<group>"; };
+		A9555ED11B6AD6CF00A145DE /* PVRShellOS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVRShellOS.cpp; sourceTree = "<group>"; };
+		A9555ED21B6AD6CF00A145DE /* PVRShellOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRShellOS.h; sourceTree = "<group>"; };
+		A9555EDD1B6AD70100A145DE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A9555EDE1B6AD70100A145DE /* PVRShellAPI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVRShellAPI.cpp; sourceTree = "<group>"; };
+		A9555EDF1B6AD70100A145DE /* PVRShellAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRShellAPI.h; sourceTree = "<group>"; };
+		A9555EE01B6AD70100A145DE /* PVRShellOS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVRShellOS.cpp; sourceTree = "<group>"; };
+		A9555EE11B6AD70100A145DE /* PVRShellOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRShellOS.h; sourceTree = "<group>"; };
+		A973D4FE1B56C2C500AB3578 /* PVRShell.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVRShell.cpp; sourceTree = "<group>"; };
+		A973D4FF1B56C2C500AB3578 /* PVRShell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRShell.h; sourceTree = "<group>"; };
+		A973D5001B56C2C500AB3578 /* PVRShellImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRShellImpl.h; sourceTree = "<group>"; };
+		A977BCFE1B66BB010067E5BF /* DrawLoadDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawLoadDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A977BD211B67186B0067E5BF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = DEVELOPER_DIR; };
+		A977BD221B67186B0067E5BF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		A977BD231B67186B0067E5BF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A977BD251B67186B0067E5BF /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/Metal.framework; sourceTree = DEVELOPER_DIR; };
+		A977BD261B67186B0067E5BF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		A9A222171B5D69F40050A5F9 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		A9CD1E7B1B8B7E9800FF0551 /* FragShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = FragShader.fsh; sourceTree = "<group>"; };
+		A9CD1E7E1B8B7E9800FF0551 /* VertShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = VertShader.vsh; sourceTree = "<group>"; };
+		A9CD1E801B8B7E9800FF0551 /* DrawLoadDemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DrawLoadDemo.cpp; sourceTree = "<group>"; };
+		A9CD1E811B8B7E9800FF0551 /* ParticleSystemCPU.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleSystemCPU.cpp; sourceTree = "<group>"; };
+		A9CD1E821B8B7E9800FF0551 /* ParticleSystemCPU.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleSystemCPU.h; sourceTree = "<group>"; };
+		A9CDEA271B6A782C00F7B008 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		A9E264761B671B0A00FE691A /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/libc++.dylib"; sourceTree = DEVELOPER_DIR; };
+		A9E8B9851B85221B003B268F /* EAGL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EAGL.m; path = ../../../../MoltenGL/macOS/EAGL.m; sourceTree = "<group>"; };
+		A9E8B9861B85221B003B268F /* egl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = egl.m; path = ../../../../MoltenGL/macOS/egl.m; sourceTree = "<group>"; };
+		A9E8B9871B85221B003B268F /* gl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = gl.m; path = ../../../../MoltenGL/macOS/gl.m; sourceTree = "<group>"; };
+		A9E8B9881B85221B003B268F /* glext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = glext.m; path = ../../../../MoltenGL/macOS/glext.m; sourceTree = "<group>"; };
+		A9F8092D1B90EB62002B6CA2 /* isosphere-80-tris.pod */ = {isa = PBXFileReference; lastKnownFileType = file; path = "isosphere-80-tris.pod"; sourceTree = "<group>"; };
+		BA240AC10FEFE77A00DE852D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A94A67291B7BDEC600F6D7C4 /* MoltenGL.framework in Frameworks */,
+				A94A672A1B7BDEC600F6D7C4 /* MoltenGLShaderConverter.framework in Frameworks */,
+				A900B1A31B5EAA1C00150D60 /* libc++.dylib in Frameworks */,
+				A9CDEA281B6A782C00F7B008 /* GLKit.framework in Frameworks */,
+				A9A222181B5D69F40050A5F9 /* Metal.framework in Frameworks */,
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				1D3623EC0D0F72F000981E51 /* CoreGraphics.framework in Frameworks */,
+				2D500B9A0D5A79CF00DBA0E3 /* QuartzCore.framework in Frameworks */,
+				BA240AC20FEFE77A00DE852D /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A977BCF11B66BB010067E5BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A94A67251B7BDE9B00F6D7C4 /* MoltenGL.framework in Frameworks */,
+				A94A67261B7BDE9B00F6D7C4 /* MoltenGLShaderConverter.framework in Frameworks */,
+				A9E264771B671B0A00FE691A /* libc++.dylib in Frameworks */,
+				A977BD271B67186B0067E5BF /* AppKit.framework in Frameworks */,
+				A977BD281B67186B0067E5BF /* CoreGraphics.framework in Frameworks */,
+				A977BD291B67186B0067E5BF /* Foundation.framework in Frameworks */,
+				A977BD2B1B67186B0067E5BF /* Metal.framework in Frameworks */,
+				A977BD2C1B67186B0067E5BF /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* DrawLoadDemo.app */,
+				A977BCFE1B66BB010067E5BF /* DrawLoadDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				A9CD1E7A1B8B7E9800FF0551 /* Shaders */,
+				A9CD1E7F1B8B7E9800FF0551 /* Source */,
+				A973D4AB1B56C1F200AB3578 /* Resources */,
+				A9E29E6D1B59C1A200B7E28C /* Support */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9ADEC601B6EC2EB00DBA48C /* iOS */,
+				A9ADEC611B6EC2F300DBA48C /* macOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A90857151B88201E00B1E2F1 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				A90857161B88201E00B1E2F1 /* Main.storyboard */,
+				A90857171B88201E00B1E2F1 /* macOS.xcassets */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		A908571A1B88202800B1E2F1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A908571B1B88202800B1E2F1 /* Default-568h@2x.png */,
+				A908571C1B88202800B1E2F1 /* Default~ipad.png */,
+				A908571D1B88202800B1E2F1 /* Icon.png */,
+				A908571E1B88202800B1E2F1 /* Main.storyboard */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		A9272C1D1B5EF26C0041A6E5 /* PVRTools */ = {
+			isa = PBXGroup;
+			children = (
+				A9272C1E1B5EF26C0041A6E5 /* OGLES2 */,
+				A9272C2F1B5EF26C0041A6E5 /* PVRTArray.h */,
+				A9272C301B5EF26C0041A6E5 /* PVRTBackground.h */,
+				A9272C311B5EF26C0041A6E5 /* PVRTBoneBatch.cpp */,
+				A9272C321B5EF26C0041A6E5 /* PVRTBoneBatch.h */,
+				A9272C331B5EF26C0041A6E5 /* PVRTDecompress.cpp */,
+				A9272C341B5EF26C0041A6E5 /* PVRTDecompress.h */,
+				A9272C351B5EF26C0041A6E5 /* PVRTError.cpp */,
+				A9272C361B5EF26C0041A6E5 /* PVRTError.h */,
+				A9272C371B5EF26C0041A6E5 /* PVRTFixedPoint.cpp */,
+				A9272C381B5EF26C0041A6E5 /* PVRTFixedPoint.h */,
+				A9272C391B5EF26C0041A6E5 /* PVRTGeometry.cpp */,
+				A9272C3A1B5EF26C0041A6E5 /* PVRTGeometry.h */,
+				A9272C3B1B5EF26C0041A6E5 /* PVRTGlobal.h */,
+				A9272C3C1B5EF26C0041A6E5 /* PVRTHash.h */,
+				A9272C3D1B5EF26C0041A6E5 /* PVRTMap.h */,
+				A9272C3E1B5EF26C0041A6E5 /* PVRTMathTable.h */,
+				A9272C3F1B5EF26C0041A6E5 /* PVRTMatrix.h */,
+				A9272C401B5EF26C0041A6E5 /* PVRTMatrixF.cpp */,
+				A9272C411B5EF26C0041A6E5 /* PVRTMatrixX.cpp */,
+				A9272C421B5EF26C0041A6E5 /* PVRTMemoryFileSystem.h */,
+				A9272C431B5EF26C0041A6E5 /* PVRTMisc.cpp */,
+				A9272C441B5EF26C0041A6E5 /* PVRTMisc.h */,
+				A9272C451B5EF26C0041A6E5 /* PVRTModelPOD.cpp */,
+				A9272C461B5EF26C0041A6E5 /* PVRTModelPOD.h */,
+				A9272C471B5EF26C0041A6E5 /* PVRTools.h */,
+				A9272C481B5EF26C0041A6E5 /* PVRTPFXParser.cpp */,
+				A9272C491B5EF26C0041A6E5 /* PVRTPFXParser.h */,
+				A9272C4A1B5EF26C0041A6E5 /* PVRTPrint3D.cpp */,
+				A9272C4B1B5EF26C0041A6E5 /* PVRTPrint3D.h */,
+				A9272C4C1B5EF26C0041A6E5 /* PVRTPrint3DHelveticaBold.h */,
+				A9272C4D1B5EF26C0041A6E5 /* PVRTPrint3DIMGLogo.h */,
+				A9272C4E1B5EF26C0041A6E5 /* PVRTQuaternion.h */,
+				A9272C4F1B5EF26C0041A6E5 /* PVRTQuaternionF.cpp */,
+				A9272C501B5EF26C0041A6E5 /* PVRTQuaternionX.cpp */,
+				A9272C511B5EF26C0041A6E5 /* PVRTResourceFile.cpp */,
+				A9272C521B5EF26C0041A6E5 /* PVRTResourceFile.h */,
+				A9272C531B5EF26C0041A6E5 /* PVRTShadowVol.cpp */,
+				A9272C541B5EF26C0041A6E5 /* PVRTShadowVol.h */,
+				A9272C551B5EF26C0041A6E5 /* PVRTSingleton.h */,
+				A9272C561B5EF26C0041A6E5 /* PVRTSkipGraph.h */,
+				A9272C571B5EF26C0041A6E5 /* PVRTString.cpp */,
+				A9272C581B5EF26C0041A6E5 /* PVRTString.h */,
+				A9272C591B5EF26C0041A6E5 /* PVRTStringHash.cpp */,
+				A9272C5A1B5EF26C0041A6E5 /* PVRTStringHash.h */,
+				A9272C5B1B5EF26C0041A6E5 /* PVRTTexture.cpp */,
+				A9272C5C1B5EF26C0041A6E5 /* PVRTTexture.h */,
+				A9272C5D1B5EF26C0041A6E5 /* PVRTTrans.cpp */,
+				A9272C5E1B5EF26C0041A6E5 /* PVRTTrans.h */,
+				A9272C5F1B5EF26C0041A6E5 /* PVRTTriStrip.cpp */,
+				A9272C601B5EF26C0041A6E5 /* PVRTTriStrip.h */,
+				A9272C611B5EF26C0041A6E5 /* PVRTUnicode.cpp */,
+				A9272C621B5EF26C0041A6E5 /* PVRTUnicode.h */,
+				A9272C631B5EF26C0041A6E5 /* PVRTVector.cpp */,
+				A9272C641B5EF26C0041A6E5 /* PVRTVector.h */,
+				A9272C651B5EF26C0041A6E5 /* PVRTVertex.cpp */,
+				A9272C661B5EF26C0041A6E5 /* PVRTVertex.h */,
+				A9272C671B5EF26C0041A6E5 /* sdkver.h */,
+			);
+			name = PVRTools;
+			path = ../Common/PVRTools;
+			sourceTree = "<group>";
+		};
+		A9272C1E1B5EF26C0041A6E5 /* OGLES2 */ = {
+			isa = PBXGroup;
+			children = (
+				A9272C1F1B5EF26C0041A6E5 /* OGLES2Tools.h */,
+				A9272C201B5EF26C0041A6E5 /* PVRTBackground.cpp */,
+				A9272C211B5EF26C0041A6E5 /* PVRTBackgroundShaders.h */,
+				A9272C221B5EF26C0041A6E5 /* PVRTContext.h */,
+				A9272C231B5EF26C0041A6E5 /* PVRTgles2Ext.cpp */,
+				A9272C241B5EF26C0041A6E5 /* PVRTgles2Ext.h */,
+				A9272C251B5EF26C0041A6E5 /* PVRTPFXParserAPI.cpp */,
+				A9272C261B5EF26C0041A6E5 /* PVRTPFXParserAPI.h */,
+				A9272C271B5EF26C0041A6E5 /* PVRTPFXSemantics.cpp */,
+				A9272C281B5EF26C0041A6E5 /* PVRTPFXSemantics.h */,
+				A9272C291B5EF26C0041A6E5 /* PVRTPrint3DAPI.cpp */,
+				A9272C2A1B5EF26C0041A6E5 /* PVRTPrint3DShaders.h */,
+				A9272C2B1B5EF26C0041A6E5 /* PVRTShader.cpp */,
+				A9272C2C1B5EF26C0041A6E5 /* PVRTShader.h */,
+				A9272C2D1B5EF26C0041A6E5 /* PVRTTextureAPI.cpp */,
+				A9272C2E1B5EF26C0041A6E5 /* PVRTTextureAPI.h */,
+			);
+			path = OGLES2;
+			sourceTree = "<group>";
+		};
+		A9555EC91B6AD6C500A145DE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A9555ECA1B6AD6CF00A145DE /* AppDelegate.h */,
+				A9555ECB1B6AD6CF00A145DE /* AppDelegate.m */,
+				A9555ECC1B6AD6CF00A145DE /* DemoViewController.h */,
+				A9555ECD1B6AD6CF00A145DE /* DemoViewController.mm */,
+				A9555ECE1B6AD6CF00A145DE /* main.m */,
+				A9555ECF1B6AD6CF00A145DE /* PVRShellAPI.cpp */,
+				A9555ED01B6AD6CF00A145DE /* PVRShellAPI.h */,
+				A9555ED11B6AD6CF00A145DE /* PVRShellOS.cpp */,
+				A9555ED21B6AD6CF00A145DE /* PVRShellOS.h */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		A9555ED81B6AD6D900A145DE /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				A92FDC911B6B0072005700A4 /* AppDelegate.h */,
+				A92FDC921B6B0072005700A4 /* AppDelegate.m */,
+				A92FDC9C1B6B114D005700A4 /* DemoViewController.h */,
+				A92FDC9D1B6B114D005700A4 /* DemoViewController.mm */,
+				A9E8B9851B85221B003B268F /* EAGL.m */,
+				A9E8B9861B85221B003B268F /* egl.m */,
+				A9E8B9871B85221B003B268F /* gl.m */,
+				A9E8B9881B85221B003B268F /* glext.m */,
+				A9555EDD1B6AD70100A145DE /* main.m */,
+				A9555EDE1B6AD70100A145DE /* PVRShellAPI.cpp */,
+				A9555EDF1B6AD70100A145DE /* PVRShellAPI.h */,
+				A9555EE01B6AD70100A145DE /* PVRShellOS.cpp */,
+				A9555EE11B6AD70100A145DE /* PVRShellOS.h */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		A973D4AB1B56C1F200AB3578 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A9F8092D1B90EB62002B6CA2 /* isosphere-80-tris.pod */,
+				A93BF75D1B974C9F00284723 /* isosphere-320-tris.pod */,
+				A93BF7601B97522200284723 /* isosphere-1280-tris.pod */,
+				A908571A1B88202800B1E2F1 /* iOS */,
+				A90857151B88201E00B1E2F1 /* macOS */,
+			);
+			name = Resources;
+			path = ../Common/Resources;
+			sourceTree = "<group>";
+		};
+		A973D4E81B56C2C500AB3578 /* PVRShell */ = {
+			isa = PBXGroup;
+			children = (
+				A915600F1B6AD8D8005640E3 /* MGLPVRShell.cpp */,
+				A91560101B6AD8D8005640E3 /* MGLPVRShell.h */,
+				A973D4FE1B56C2C500AB3578 /* PVRShell.cpp */,
+				A973D4FF1B56C2C500AB3578 /* PVRShell.h */,
+				A973D5001B56C2C500AB3578 /* PVRShellImpl.h */,
+				A9555EC91B6AD6C500A145DE /* iOS */,
+				A9555ED81B6AD6D900A145DE /* macOS */,
+			);
+			name = PVRShell;
+			path = ../Common/PVRShell;
+			sourceTree = "<group>";
+		};
+		A9ADEC601B6EC2EB00DBA48C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A94A67271B7BDEC600F6D7C4 /* MoltenGL.framework */,
+				A94A67281B7BDEC600F6D7C4 /* MoltenGLShaderConverter.framework */,
+				A9A222171B5D69F40050A5F9 /* Metal.framework */,
+				BA240AC10FEFE77A00DE852D /* OpenGLES.framework */,
+				1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */,
+				2D500B990D5A79CF00DBA0E3 /* QuartzCore.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				A9CDEA271B6A782C00F7B008 /* GLKit.framework */,
+				A900B1A21B5EAA1C00150D60 /* libc++.dylib */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		A9ADEC611B6EC2F300DBA48C /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				A94A67231B7BDE9B00F6D7C4 /* MoltenGL.framework */,
+				A94A67241B7BDE9B00F6D7C4 /* MoltenGLShaderConverter.framework */,
+				A9E264761B671B0A00FE691A /* libc++.dylib */,
+				A977BD251B67186B0067E5BF /* Metal.framework */,
+				A977BD261B67186B0067E5BF /* QuartzCore.framework */,
+				A977BD211B67186B0067E5BF /* AppKit.framework */,
+				A977BD221B67186B0067E5BF /* CoreGraphics.framework */,
+				A977BD231B67186B0067E5BF /* Foundation.framework */,
+			);
+			name = macOS;
+			sourceTree = "<group>";
+		};
+		A9CD1E7A1B8B7E9800FF0551 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				A9CD1E7B1B8B7E9800FF0551 /* FragShader.fsh */,
+				A9CD1E7E1B8B7E9800FF0551 /* VertShader.vsh */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		A9CD1E7F1B8B7E9800FF0551 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A9CD1E801B8B7E9800FF0551 /* DrawLoadDemo.cpp */,
+				A9CD1E811B8B7E9800FF0551 /* ParticleSystemCPU.cpp */,
+				A9CD1E821B8B7E9800FF0551 /* ParticleSystemCPU.h */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		A9E29E6D1B59C1A200B7E28C /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				A973D4E81B56C2C500AB3578 /* PVRShell */,
+				A9272C1D1B5EF26C0041A6E5 /* PVRTools */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* DrawLoadDemo-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "DrawLoadDemo-iOS" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DrawLoadDemo-iOS";
+			productName = foo;
+			productReference = 1D6058910D05DD3D006BFB54 /* DrawLoadDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A977BCBD1B66BB010067E5BF /* DrawLoadDemo-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A977BCFB1B66BB010067E5BF /* Build configuration list for PBXNativeTarget "DrawLoadDemo-macOS" */;
+			buildPhases = (
+				A977BCBE1B66BB010067E5BF /* Resources */,
+				A977BCC91B66BB010067E5BF /* Sources */,
+				A977BCF11B66BB010067E5BF /* Frameworks */,
+				A927AFA71B671CFA004EDBCF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DrawLoadDemo-macOS";
+			productName = foo;
+			productReference = A977BCFE1B66BB010067E5BF /* DrawLoadDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				TargetAttributes = {
+					A977BCBD1B66BB010067E5BF = {
+						DevelopmentTeam = VU3TCKU48B;
+					};
+				};
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "DrawLoadDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				fr,
+				en,
+				Base,
+				ja,
+				de,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* DrawLoadDemo-iOS */,
+				A977BCBD1B66BB010067E5BF /* DrawLoadDemo-macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A93BF75E1B974C9F00284723 /* isosphere-320-tris.pod in Resources */,
+				A93BF7611B97522200284723 /* isosphere-1280-tris.pod in Resources */,
+				A908571F1B88202800B1E2F1 /* Default-568h@2x.png in Resources */,
+				A90857221B88202800B1E2F1 /* Main.storyboard in Resources */,
+				A9CD1E891B8B7E9800FF0551 /* VertShader.vsh in Resources */,
+				A9F809301B90EB62002B6CA2 /* isosphere-80-tris.pod in Resources */,
+				A9CD1E831B8B7E9800FF0551 /* FragShader.fsh in Resources */,
+				A90857211B88202800B1E2F1 /* Icon.png in Resources */,
+				A90857201B88202800B1E2F1 /* Default~ipad.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A977BCBE1B66BB010067E5BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A90857181B88201E00B1E2F1 /* Main.storyboard in Resources */,
+				A90857191B88201E00B1E2F1 /* macOS.xcassets in Resources */,
+				A93BF7621B97522200284723 /* isosphere-1280-tris.pod in Resources */,
+				A9CD1E8A1B8B7E9800FF0551 /* VertShader.vsh in Resources */,
+				A9CD1E841B8B7E9800FF0551 /* FragShader.fsh in Resources */,
+				A93BF75F1B974C9F00284723 /* isosphere-320-tris.pod in Resources */,
+				A9F809311B90EB62002B6CA2 /* isosphere-80-tris.pod in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9272C831B5EF26C0041A6E5 /* PVRTUnicode.cpp in Sources */,
+				A9272C7C1B5EF26C0041A6E5 /* PVRTResourceFile.cpp in Sources */,
+				A9CD1E8B1B8B7E9800FF0551 /* DrawLoadDemo.cpp in Sources */,
+				A9272C7E1B5EF26C0041A6E5 /* PVRTString.cpp in Sources */,
+				A9272C6D1B5EF26C0041A6E5 /* PVRTShader.cpp in Sources */,
+				A9272C761B5EF26C0041A6E5 /* PVRTMisc.cpp in Sources */,
+				A9272C771B5EF26C0041A6E5 /* PVRTModelPOD.cpp in Sources */,
+				A9272C721B5EF26C0041A6E5 /* PVRTFixedPoint.cpp in Sources */,
+				A9272C751B5EF26C0041A6E5 /* PVRTMatrixX.cpp in Sources */,
+				A9272C731B5EF26C0041A6E5 /* PVRTGeometry.cpp in Sources */,
+				A9272C781B5EF26C0041A6E5 /* PVRTPFXParser.cpp in Sources */,
+				A9272C811B5EF26C0041A6E5 /* PVRTTrans.cpp in Sources */,
+				A9272C791B5EF26C0041A6E5 /* PVRTPrint3D.cpp in Sources */,
+				A9272C701B5EF26C0041A6E5 /* PVRTDecompress.cpp in Sources */,
+				A91560111B6AD8D8005640E3 /* MGLPVRShell.cpp in Sources */,
+				A9272C711B5EF26C0041A6E5 /* PVRTError.cpp in Sources */,
+				A9555ED61B6AD6CF00A145DE /* PVRShellAPI.cpp in Sources */,
+				A9272C691B5EF26C0041A6E5 /* PVRTgles2Ext.cpp in Sources */,
+				A9272C821B5EF26C0041A6E5 /* PVRTTriStrip.cpp in Sources */,
+				A973D5091B56C2C500AB3578 /* PVRShell.cpp in Sources */,
+				A9272C6F1B5EF26C0041A6E5 /* PVRTBoneBatch.cpp in Sources */,
+				A9272C851B5EF26C0041A6E5 /* PVRTVertex.cpp in Sources */,
+				A9272C7B1B5EF26C0041A6E5 /* PVRTQuaternionX.cpp in Sources */,
+				A9555ED51B6AD6CF00A145DE /* main.m in Sources */,
+				A9272C6C1B5EF26C0041A6E5 /* PVRTPrint3DAPI.cpp in Sources */,
+				A9272C7A1B5EF26C0041A6E5 /* PVRTQuaternionF.cpp in Sources */,
+				A9555ED71B6AD6CF00A145DE /* PVRShellOS.cpp in Sources */,
+				A9272C6E1B5EF26C0041A6E5 /* PVRTTextureAPI.cpp in Sources */,
+				A9555ED41B6AD6CF00A145DE /* DemoViewController.mm in Sources */,
+				A9272C801B5EF26C0041A6E5 /* PVRTTexture.cpp in Sources */,
+				A9272C6B1B5EF26C0041A6E5 /* PVRTPFXSemantics.cpp in Sources */,
+				A9CD1E8D1B8B7E9800FF0551 /* ParticleSystemCPU.cpp in Sources */,
+				A9272C7F1B5EF26C0041A6E5 /* PVRTStringHash.cpp in Sources */,
+				A9272C7D1B5EF26C0041A6E5 /* PVRTShadowVol.cpp in Sources */,
+				A9272C841B5EF26C0041A6E5 /* PVRTVector.cpp in Sources */,
+				A9272C741B5EF26C0041A6E5 /* PVRTMatrixF.cpp in Sources */,
+				A9272C6A1B5EF26C0041A6E5 /* PVRTPFXParserAPI.cpp in Sources */,
+				A9272C681B5EF26C0041A6E5 /* PVRTBackground.cpp in Sources */,
+				A9555ED31B6AD6CF00A145DE /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A977BCC91B66BB010067E5BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9E8B98C1B85221B003B268F /* glext.m in Sources */,
+				A977BCCA1B66BB010067E5BF /* PVRTUnicode.cpp in Sources */,
+				A9CD1E8C1B8B7E9800FF0551 /* DrawLoadDemo.cpp in Sources */,
+				A92FDC9E1B6B114D005700A4 /* DemoViewController.mm in Sources */,
+				A9555EE71B6AD70100A145DE /* PVRShellOS.cpp in Sources */,
+				A977BCCB1B66BB010067E5BF /* PVRTResourceFile.cpp in Sources */,
+				A977BCCC1B66BB010067E5BF /* PVRTString.cpp in Sources */,
+				A977BCCD1B66BB010067E5BF /* PVRTShader.cpp in Sources */,
+				A977BCCE1B66BB010067E5BF /* PVRTMisc.cpp in Sources */,
+				A977BCCF1B66BB010067E5BF /* PVRTModelPOD.cpp in Sources */,
+				A977BCD01B66BB010067E5BF /* PVRTFixedPoint.cpp in Sources */,
+				A977BCD11B66BB010067E5BF /* PVRTMatrixX.cpp in Sources */,
+				A9CD1E8E1B8B7E9800FF0551 /* ParticleSystemCPU.cpp in Sources */,
+				A9E8B9891B85221B003B268F /* EAGL.m in Sources */,
+				A977BCD21B66BB010067E5BF /* PVRTGeometry.cpp in Sources */,
+				A977BCD41B66BB010067E5BF /* PVRTPFXParser.cpp in Sources */,
+				A977BCD51B66BB010067E5BF /* PVRTTrans.cpp in Sources */,
+				A977BCD61B66BB010067E5BF /* PVRTPrint3D.cpp in Sources */,
+				A977BCD71B66BB010067E5BF /* PVRTDecompress.cpp in Sources */,
+				A91560121B6AD8D8005640E3 /* MGLPVRShell.cpp in Sources */,
+				A977BCD81B66BB010067E5BF /* PVRTError.cpp in Sources */,
+				A977BCD91B66BB010067E5BF /* PVRTgles2Ext.cpp in Sources */,
+				A977BCDB1B66BB010067E5BF /* PVRTTriStrip.cpp in Sources */,
+				A977BCDC1B66BB010067E5BF /* PVRShell.cpp in Sources */,
+				A92FDC931B6B0072005700A4 /* AppDelegate.m in Sources */,
+				A977BCDD1B66BB010067E5BF /* PVRTBoneBatch.cpp in Sources */,
+				A977BCDE1B66BB010067E5BF /* PVRTVertex.cpp in Sources */,
+				A977BCDF1B66BB010067E5BF /* PVRTQuaternionX.cpp in Sources */,
+				A9E8B98A1B85221B003B268F /* egl.m in Sources */,
+				A977BCE01B66BB010067E5BF /* PVRTPrint3DAPI.cpp in Sources */,
+				A977BCE21B66BB010067E5BF /* PVRTQuaternionF.cpp in Sources */,
+				A977BCE51B66BB010067E5BF /* PVRTTextureAPI.cpp in Sources */,
+				A9555EE61B6AD70100A145DE /* PVRShellAPI.cpp in Sources */,
+				A977BCE61B66BB010067E5BF /* PVRTTexture.cpp in Sources */,
+				A977BCE71B66BB010067E5BF /* PVRTPFXSemantics.cpp in Sources */,
+				A9E8B98B1B85221B003B268F /* gl.m in Sources */,
+				A977BCE81B66BB010067E5BF /* PVRTStringHash.cpp in Sources */,
+				A977BCE91B66BB010067E5BF /* PVRTShadowVol.cpp in Sources */,
+				A977BCEC1B66BB010067E5BF /* PVRTVector.cpp in Sources */,
+				A977BCED1B66BB010067E5BF /* PVRTMatrixF.cpp in Sources */,
+				A977BCEF1B66BB010067E5BF /* PVRTPFXParserAPI.cpp in Sources */,
+				A9555EE51B6AD70100A145DE /* main.m in Sources */,
+				A977BCF01B66BB010067E5BF /* PVRTBackground.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					../../MoltenGL/iOS,
+					../../MoltenGLShaderConverter/iOS,
+				);
+				GCC_PREFIX_HEADER = ../Common/PVRShell/iOS/Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"MGL_LICENSE_TYPE=GLES2-Indie*2",
+					"MGL_LICENSE_ID=sales@moltengl.com",
+					"MGL_LICENSE_YEAR=2019",
+					"MGL_LICENSE_MONTH=4",
+					"MGL_LICENSE_DAY=12",
+					"MGL_LICENSE_KEY=NOVOT3NGHDZ6OQSCXX4VYNXGI3QLI6Z6",
+					"MGL_LICENSE_ACCEPT_TERMS_AND_CONDITIONS=1",
+					"MGL_DEMO_POLY_SIZE=80",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ../Common/PVRShell/iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = DrawLoadDemo;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					../../MoltenGL/iOS,
+					../../MoltenGLShaderConverter/iOS,
+				);
+				GCC_PREFIX_HEADER = ../Common/PVRShell/iOS/Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"MGL_LICENSE_TYPE=GLES2-Indie*2",
+					"MGL_LICENSE_ID=sales@moltengl.com",
+					"MGL_LICENSE_YEAR=2019",
+					"MGL_LICENSE_MONTH=4",
+					"MGL_LICENSE_DAY=12",
+					"MGL_LICENSE_KEY=NOVOT3NGHDZ6OQSCXX4VYNXGI3QLI6Z6",
+					"MGL_LICENSE_ACCEPT_TERMS_AND_CONDITIONS=1",
+					"MGL_DEMO_POLY_SIZE=80",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ../Common/PVRShell/iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = DrawLoadDemo;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A977BCFC1B66BB010067E5BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					../../MoltenGL/macOS,
+					../../MoltenGLShaderConverter/macOS,
+				);
+				GCC_PREFIX_HEADER = ../Common/PVRShell/macOS/Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"MGL_SUPPORT_OPENGL_ON_METAL=1",
+					"MGL_DEMO_POLY_SIZE=80",
+					"$(inherited)",
+				);
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)/**",
+					../Common/API,
+				);
+				INFOPLIST_FILE = ../Common/PVRShell/macOS/Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					../Common/PVRShell/macOS/OGLES2,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = DrawLoadDemo;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A977BCFD1B66BB010067E5BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					../../MoltenGL/macOS,
+					../../MoltenGLShaderConverter/macOS,
+				);
+				GCC_PREFIX_HEADER = ../Common/PVRShell/macOS/Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"MGL_DEMO_POLY_SIZE=80",
+					"$(inherited)",
+				);
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)/**",
+					../Common/API,
+				);
+				INFOPLIST_FILE = ../Common/PVRShell/macOS/Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					../Common/PVRShell/macOS/OGLES2,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = DrawLoadDemo;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_MODULES = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					BUILD_OGLES2,
+					"DEBUG=1",
+					_DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = "../Common/PVRTools/**";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.moltengl.${PRODUCT_NAME:identifier}";
+				PRODUCT_NAME = ParticlesDemo;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "../../MoltenGL/RedirectHeaders/include/**";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_MODULES = NO;
+				ENABLE_BITCODE = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = BUILD_OGLES2;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = "../Common/PVRTools/**";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.moltengl.${PRODUCT_NAME:identifier}";
+				PRODUCT_NAME = ParticlesDemo;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "../../MoltenGL/RedirectHeaders/include/**";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "DrawLoadDemo-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A977BCFB1B66BB010067E5BF /* Build configuration list for PBXNativeTarget "DrawLoadDemo-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A977BCFC1B66BB010067E5BF /* Debug */,
+				A977BCFD1B66BB010067E5BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "DrawLoadDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
