@@ -16,8 +16,8 @@
 
 
 #import <MoltenGL/mglEnv.h>
-#import "../../orig/OpenGLES/EAGL.h"
 
+#import "../../Private/MoltenGL/EAGL.h"
 
 #pragma mark -
 #pragma mark MGLEAGLSharegroup

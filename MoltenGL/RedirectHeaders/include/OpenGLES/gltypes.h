@@ -19,7 +19,7 @@
 extern "C" {
 #endif	//  __cplusplus
 	
-#import "../../../orig/OpenGLES/gltypes.h"
+#import "../../Private/MoltenGL/gltypes.h"
 
 #ifdef __cplusplus
 }

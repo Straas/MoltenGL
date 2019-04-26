@@ -20,7 +20,7 @@ extern "C" {
 #endif	//  __cplusplus
 	
 #import <MoltenGL/mglEnv.h>
-#import "../../../orig/OpenGLES/ES2/gl.h"
+#import "../../Private/MoltenGL/gl.h"
 
 	
 #if MGL_SUPPORT_OPENGL_ON_METAL

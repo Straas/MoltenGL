@@ -16,7 +16,7 @@
 
 
 #import <MoltenGL/mglEnv.h>
-#import "../../orig/QuartzCore/CAEAGLLayer.h"
+#import "../../Private/MoltenGL/CAEAGLLayer.h"
 #import <QuartzCore/CAMetalLayer.h>
 
 

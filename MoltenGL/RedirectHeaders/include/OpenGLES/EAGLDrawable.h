@@ -17,7 +17,7 @@
 
 #import <MoltenGL/mglEnv.h>
 #import "EAGL.h"
-#import "../../orig/OpenGLES/EAGLDrawable.h"
+#import "../../Private/MoltenGL/EAGLDrawable.h"
 
 #if MGL_SUPPORT_OPENGL_ON_METAL
 

@@ -20,7 +20,7 @@ extern "C" {
 #endif	//  __cplusplus
 	
 #import <MoltenGL/mglEnv.h>
-#import "../../../orig/OpenGLES/ES2/glext.h"
+#import "../../Private/MoltenGL/glext.h"
 
 
 #pragma mark Additional OpenGL constants supported by MoltenGL

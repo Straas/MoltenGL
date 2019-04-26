@@ -16,7 +16,7 @@
 
 
 #import <MoltenGL/mglEnv.h>
-#import "../../orig/GLKit/GLKView.h"
+#import "../../Private/MoltenGL/GLKView.h"
 
 
 /**
