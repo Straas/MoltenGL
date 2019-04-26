@@ -25,7 +25,6 @@ Pod::Spec.new do |s|
       'CLANG_CXX_LIBRARY' => 'libc++'
   }
   s.public_header_files = "MoltenGL/RedirectHeaders/include/**/*.h"
-  s.private_header_files = "MoltenGL/RedirectHeaders/orig/**/*.h"
   s.ios.deployment_target  = '8.0'
   s.ios.frameworks = ['Metal', 'OpenGLES', 'UIKit', 'GLKit', 'QuartzCore']
   s.ios.library = 'c++'
