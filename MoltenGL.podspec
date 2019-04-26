@@ -9,8 +9,7 @@ Pod::Spec.new do |s|
   s.author              = "MoltenGL"
   s.platform            = :ios, "8.0"
   s.source              = { :git => "https://github.com/allenlinli/moltengl.git", :tag => "0.22.2" }
-  s.ios.source_files    = ["MoltenGL/iOS/**/*.{h,m}", "MoltenGLShaderConverter/iOS/**/*.{h,m}", "MoltenGL/RedirectHeaders/include/**/*.h", "MoltenGL/iOS/MoltenGL.framework", "MoltenGLShaderConverter/iOS/MoltenGLShaderConverter.framework"]
-  # s.osx.source_files    = ["MoltenGL/macOS/*", "MoltenGLShaderConverter/macOS/*"]
+  s.ios.source_files    = ["MoltenGL/iOS/**/*.{h,m}", "MoltenGLShaderConverter/iOS/**/*.{h,m}", "MoltenGL/RedirectHeaders/include/**/*.h"]
   s.swift_version       = "4.2"
   s.pod_target_xcconfig = {
       'OTHER_LDFLAGS' => '-lObjC',
