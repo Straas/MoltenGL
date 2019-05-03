@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.platform            = :ios, "8.0"
   s.source              = { :git => "https://github.com/allenlinli/moltengl.git", :tag => "0.22.2" }
   s.ios.source_files    = ["MoltenGL/iOS/**/*.{h,m}", "MoltenGLShaderConverter/iOS/**/*.{h,m}", "MoltenGL/RedirectHeaders/include/**/*.h"]
-  s.swift_version       = "4.2"
+  # s.swift_version       = "4.2"
   s.pod_target_xcconfig = {
       'OTHER_LDFLAGS' => '-lObjC',
       'CLANG_ENABLE_MODULES' => 'NO',
