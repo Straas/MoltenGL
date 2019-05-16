@@ -22,7 +22,8 @@ Pod::Spec.new do |s|
       'ARCHS' => 'arm64 armv7',
       'ONLY_ACTIVE_ARCH' => 'YES',
       'CLANG_CXX_LANGUAGE_STANDARD' => 'c++11',
-      'CLANG_CXX_LIBRARY' => 'libc++'
+      'CLANG_CXX_LIBRARY' => 'libc++',
+      'SWIFT_VERSION' => '4.0'
   }
   s.public_header_files = "MoltenGL/RedirectHeaders/include/**/*.h"
   s.ios.deployment_target  = '8.0'
