@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A02E2752555A383F743A6CC /* libPods-TryMoltenGL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3225B1A091AEE1C1037481C9 /* libPods-TryMoltenGL.a */; };
+		FF352FCB228CFA3A0038FB18 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF352FCA228CFA3A0038FB18 /* AppDelegate.m */; };
+		FF352FCE228CFA3A0038FB18 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF352FCD228CFA3A0038FB18 /* ViewController.m */; };
+		FF352FD1228CFA3A0038FB18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF352FCF228CFA3A0038FB18 /* Main.storyboard */; };
+		FF352FD3228CFA3A0038FB18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF352FD2228CFA3A0038FB18 /* Assets.xcassets */; };
+		FF352FD6228CFA3A0038FB18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF352FD4228CFA3A0038FB18 /* LaunchScreen.storyboard */; };
+		FF352FD9228CFA3B0038FB18 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF352FD8228CFA3B0038FB18 /* main.m */; };
+		FF352FE4228D06B60038FB18 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FF352FE3228D06B60038FB18 /* Podfile */; };
+		FF352FEA228D54050038FB18 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF352FE9228D54050038FB18 /* OpenGLES.framework */; };
+		FF352FEC228D58840038FB18 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF352FEB228D58840038FB18 /* GLKit.framework */; };
+		FF352FEE228D58890038FB18 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF352FED228D58890038FB18 /* UIKit.framework */; };
+		FF352FF0228D58980038FB18 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF352FEF228D58980038FB18 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3225B1A091AEE1C1037481C9 /* libPods-TryMoltenGL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TryMoltenGL.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A5D14A888384CF12637307D /* Pods-TryMoltenGL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TryMoltenGL.release.xcconfig"; path = "Pods/Target Support Files/Pods-TryMoltenGL/Pods-TryMoltenGL.release.xcconfig"; sourceTree = "<group>"; };
+		DA94D334269A0A380898E841 /* Pods-TryMoltenGL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TryMoltenGL.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TryMoltenGL/Pods-TryMoltenGL.debug.xcconfig"; sourceTree = "<group>"; };
+		FF352FC6228CFA3A0038FB18 /* TryMoltenGL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TryMoltenGL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF352FC9228CFA3A0038FB18 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FF352FCA228CFA3A0038FB18 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FF352FCC228CFA3A0038FB18 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FF352FCD228CFA3A0038FB18 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FF352FD0228CFA3A0038FB18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF352FD2228CFA3A0038FB18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF352FD5228CFA3A0038FB18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF352FD7228CFA3B0038FB18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF352FD8228CFA3B0038FB18 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FF352FE3228D06B60038FB18 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FF352FE9228D54050038FB18 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		FF352FEB228D58840038FB18 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		FF352FED228D58890038FB18 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FF352FEF228D58980038FB18 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF352FC3228CFA3A0038FB18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF352FF0228D58980038FB18 /* QuartzCore.framework in Frameworks */,
+				FF352FEE228D58890038FB18 /* UIKit.framework in Frameworks */,
+				FF352FEC228D58840038FB18 /* GLKit.framework in Frameworks */,
+				FF352FEA228D54050038FB18 /* OpenGLES.framework in Frameworks */,
+				6A02E2752555A383F743A6CC /* libPods-TryMoltenGL.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		693CE30CE9DF2079BB9FC9AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF352FEF228D58980038FB18 /* QuartzCore.framework */,
+				FF352FED228D58890038FB18 /* UIKit.framework */,
+				FF352FEB228D58840038FB18 /* GLKit.framework */,
+				FF352FE9228D54050038FB18 /* OpenGLES.framework */,
+				3225B1A091AEE1C1037481C9 /* libPods-TryMoltenGL.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9405F231C46C644F5FEA8AF8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA94D334269A0A380898E841 /* Pods-TryMoltenGL.debug.xcconfig */,
+				4A5D14A888384CF12637307D /* Pods-TryMoltenGL.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FF352FBD228CFA3A0038FB18 = {
+			isa = PBXGroup;
+			children = (
+				FF352FE3228D06B60038FB18 /* Podfile */,
+				FF352FC8228CFA3A0038FB18 /* TryMoltenGL */,
+				FF352FC7228CFA3A0038FB18 /* Products */,
+				9405F231C46C644F5FEA8AF8 /* Pods */,
+				693CE30CE9DF2079BB9FC9AE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FF352FC7228CFA3A0038FB18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF352FC6228CFA3A0038FB18 /* TryMoltenGL.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF352FC8228CFA3A0038FB18 /* TryMoltenGL */ = {
+			isa = PBXGroup;
+			children = (
+				FF352FC9228CFA3A0038FB18 /* AppDelegate.h */,
+				FF352FCA228CFA3A0038FB18 /* AppDelegate.m */,
+				FF352FCC228CFA3A0038FB18 /* ViewController.h */,
+				FF352FCD228CFA3A0038FB18 /* ViewController.m */,
+				FF352FCF228CFA3A0038FB18 /* Main.storyboard */,
+				FF352FD2228CFA3A0038FB18 /* Assets.xcassets */,
+				FF352FD4228CFA3A0038FB18 /* LaunchScreen.storyboard */,
+				FF352FD7228CFA3B0038FB18 /* Info.plist */,
+				FF352FD8228CFA3B0038FB18 /* main.m */,
+			);
+			path = TryMoltenGL;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF352FC5228CFA3A0038FB18 /* TryMoltenGL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF352FDC228CFA3B0038FB18 /* Build configuration list for PBXNativeTarget "TryMoltenGL" */;
+			buildPhases = (
+				EB90B5DBDC5333799BB0F454 /* [CP] Check Pods Manifest.lock */,
+				FF352FC2228CFA3A0038FB18 /* Sources */,
+				FF352FC3228CFA3A0038FB18 /* Frameworks */,
+				FF352FC4228CFA3A0038FB18 /* Resources */,
+				D27BCD1AF609DD2721A1B9B9 /* [CP] Embed Pods Frameworks */,
+				5368F73BC97CD1C00DB89F76 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TryMoltenGL;
+			productName = TryMoltenGL;
+			productReference = FF352FC6228CFA3A0038FB18 /* TryMoltenGL.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF352FBE228CFA3A0038FB18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = ikala;
+				TargetAttributes = {
+					FF352FC5228CFA3A0038FB18 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = FF352FC1228CFA3A0038FB18 /* Build configuration list for PBXProject "TryMoltenGL" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF352FBD228CFA3A0038FB18;
+			productRefGroup = FF352FC7228CFA3A0038FB18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF352FC5228CFA3A0038FB18 /* TryMoltenGL */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF352FC4228CFA3A0038FB18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF352FD6228CFA3A0038FB18 /* LaunchScreen.storyboard in Resources */,
+				FF352FD3228CFA3A0038FB18 /* Assets.xcassets in Resources */,
+				FF352FE4228D06B60038FB18 /* Podfile in Resources */,
+				FF352FD1228CFA3A0038FB18 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5368F73BC97CD1C00DB89F76 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TryMoltenGL/Pods-TryMoltenGL-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D27BCD1AF609DD2721A1B9B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TryMoltenGL/Pods-TryMoltenGL-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB90B5DBDC5333799BB0F454 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF352FC2228CFA3A0038FB18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF352FCE228CFA3A0038FB18 /* ViewController.m in Sources */,
+				FF352FD9228CFA3B0038FB18 /* main.m in Sources */,
+				FF352FCB228CFA3A0038FB18 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FF352FCF228CFA3A0038FB18 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF352FD0228CFA3A0038FB18 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF352FD4228CFA3A0038FB18 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF352FD5228CFA3A0038FB18 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF352FDA228CFA3B0038FB18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FF352FDB228CFA3B0038FB18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF352FDD228CFA3B0038FB18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA94D334269A0A380898E841 /* Pods-TryMoltenGL.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D8D778CP68;
+				INFOPLIST_FILE = TryMoltenGL/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ikala.TryMoltenGL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF352FDE228CFA3B0038FB18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A5D14A888384CF12637307D /* Pods-TryMoltenGL.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D8D778CP68;
+				INFOPLIST_FILE = TryMoltenGL/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ikala.TryMoltenGL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF352FC1228CFA3A0038FB18 /* Build configuration list for PBXProject "TryMoltenGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF352FDA228CFA3B0038FB18 /* Debug */,
+				FF352FDB228CFA3B0038FB18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF352FDC228CFA3B0038FB18 /* Build configuration list for PBXNativeTarget "TryMoltenGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF352FDD228CFA3B0038FB18 /* Debug */,
+				FF352FDE228CFA3B0038FB18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF352FBE228CFA3A0038FB18 /* Project object */;
+}

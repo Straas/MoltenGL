@@ -1,0 +1,1 @@
+../../../../MoltenGL/MoltenGLShaderConverter/iOS/MoltenGLShaderConverter.framework/Headers/MGLGLSLToMSLFileConverter.h
