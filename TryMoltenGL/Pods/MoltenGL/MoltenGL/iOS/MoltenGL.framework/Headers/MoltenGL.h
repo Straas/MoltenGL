@@ -1,5 +1,5 @@
 /*
- * gl.h
+ * MoltenGL.h
  *
  * Copyright (c) 2014-2019 The Brenwill Workshop Ltd. All rights reserved.
  * http://www.brenwill.com
@@ -15,12 +15,11 @@
 /** @file */	// Doxygen marker
 
 
-#ifdef __cplusplus
-extern "C" {
-#endif	//  __cplusplus
-	
-#import "../../Private/MoltenGL/gltypes.h"
+#import "mglEnv.h"
+#import "mglext.h"
+#import "mglDataTypes.h"
+#import "mglMetalState.h"
+#import "mglGLKitDataTypes.h"
 
-#ifdef __cplusplus
-}
-#endif	//  __cplusplus
+
+
