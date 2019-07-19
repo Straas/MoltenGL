@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D673E46BF2671CF3AF7120EBA369C8E /* Pods-TryMoltenGL-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 876244F60279D416D05DC9B6253584D2 /* Pods-TryMoltenGL-dummy.m */; };
+		AD20FF293B100B8E31539B185740289F /* Pods-TryMoltenGL-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 876244F60279D416D05DC9B6253584D2 /* Pods-TryMoltenGL-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +41,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8A278D9A4FFD82461694C55C68A504CA /* Frameworks */ = {
+		B87E2F2D485689D580FDEFA3F62AC2F7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -145,7 +145,7 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		C126A8541AB02395D411D069CF379031 /* Headers */ = {
+		006ABD693F4381465CA099BCE76A87EA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -155,13 +155,13 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D68A018F03BBB48E1E8C16E9B3058443 /* Pods-TryMoltenGL */ = {
+		1A9D43D6AF489CEEFB506106708F077E /* Pods-TryMoltenGL */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9B8803002FA1BFBABF4C3815E42CA22D /* Build configuration list for PBXNativeTarget "Pods-TryMoltenGL" */;
+			buildConfigurationList = 746EDD09AD2575D922FD2245F560CEF2 /* Build configuration list for PBXNativeTarget "Pods-TryMoltenGL" */;
 			buildPhases = (
-				C126A8541AB02395D411D069CF379031 /* Headers */,
-				12F5E69735816D81DDEC92AFFE120B25 /* Sources */,
-				8A278D9A4FFD82461694C55C68A504CA /* Frameworks */,
+				006ABD693F4381465CA099BCE76A87EA /* Headers */,
+				99B2B0394DFC302365A9A33C5E7764F7 /* Sources */,
+				B87E2F2D485689D580FDEFA3F62AC2F7 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -178,8 +178,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1020;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 9.3";
@@ -193,23 +193,44 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D68A018F03BBB48E1E8C16E9B3058443 /* Pods-TryMoltenGL */,
+				1A9D43D6AF489CEEFB506106708F077E /* Pods-TryMoltenGL */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		12F5E69735816D81DDEC92AFFE120B25 /* Sources */ = {
+		99B2B0394DFC302365A9A33C5E7764F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D673E46BF2671CF3AF7120EBA369C8E /* Pods-TryMoltenGL-dummy.m in Sources */,
+				AD20FF293B100B8E31539B185740289F /* Pods-TryMoltenGL-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		030853EF4AE40091521AE7CA8C23B26A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F82FEB6D28A5EEB92DE74063530922C /* Pods-TryMoltenGL.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		134BC37FD8348964494911ED9036E69D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -276,7 +297,7 @@
 			};
 			name = Debug;
 		};
-		3993D8EBA4BBDCDE9B01917D5A7BD326 /* Debug */ = {
+		8DF9DE234C160158A9EED1C20736FA8B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 27D33A209BF3AE438CAD70E0F6D398C6 /* Pods-TryMoltenGL.debug.xcconfig */;
 			buildSettings = {
@@ -295,27 +316,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
-		};
-		7795E39CF9AE69D5A5DCDEA45EF42F15 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1F82FEB6D28A5EEB92DE74063530922C /* Pods-TryMoltenGL.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
 		};
 		D02FDD7B72A14562E83DEA74F1318F9E /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -391,11 +391,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9B8803002FA1BFBABF4C3815E42CA22D /* Build configuration list for PBXNativeTarget "Pods-TryMoltenGL" */ = {
+		746EDD09AD2575D922FD2245F560CEF2 /* Build configuration list for PBXNativeTarget "Pods-TryMoltenGL" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3993D8EBA4BBDCDE9B01917D5A7BD326 /* Debug */,
-				7795E39CF9AE69D5A5DCDEA45EF42F15 /* Release */,
+				8DF9DE234C160158A9EED1C20736FA8B /* Debug */,
+				030853EF4AE40091521AE7CA8C23B26A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

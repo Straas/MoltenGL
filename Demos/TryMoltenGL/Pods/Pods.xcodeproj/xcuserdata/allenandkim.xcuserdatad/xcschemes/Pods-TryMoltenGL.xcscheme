@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1020"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D68A018F03BBB48E1E8C16E9B3058443"
+               BlueprintIdentifier = "1A9D43D6AF489CEEFB506106708F077E"
                BuildableName = "libPods-TryMoltenGL.a"
                BlueprintName = "Pods-TryMoltenGL"
                ReferencedContainer = "container:Pods.xcodeproj">
