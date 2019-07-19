@@ -1,14 +1,14 @@
 Pod::Spec.new do |s|
 
   s.name                = "MoltenGL"
-  s.version             = "0.23.1"
-  s.summary             = "MoltenVK will run your OpenGL ES 2.0 application or game on iOS or macOS using Metal — and faster!"
+  s.version             = "0.23.2"
+  s.summary             = "MoltenGL will run your OpenGL ES 2.0 application or game on iOS or macOS using Metal — and faster!"
   s.description         = "MoltenGL is an implementation of the OpenGL ES 2.0 API that runs on Apple's Metal graphics framework. MoltenGL provides many of the performance benefits of the Metal framework, while maintaining compliance with the proven OpenGL ES 2.0 API. And MoltenGL will continue to run your OpenGL ES application or game on future versions of iOS and macOS, should Apple remove OpenGL ES in the future."
   s.homepage            = "https://moltengl.com/"
   s.license = { :type => 'custom', :file => 'LICENSE.md' }
   s.author              = "MoltenGL"
   s.platform            = :ios, "8.0"
-  s.source              = { :git => "https://github.com/allenlinli/moltengl.git", :tag => "0.23.0" }
+  s.source              = { :git => "https://github.com/straas/moltengl.git", :tag => "#{s.version}" }
   s.ios.source_files    = ["MoltenGL/iOS/**/*.h", "MoltenGLShaderConverter/iOS/**/*.h", "MoltenGL/RedirectHeaders/include/**/*.h"]
   # s.swift_version       = "4.2"
   s.pod_target_xcconfig = {
