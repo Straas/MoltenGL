@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 
+// MARK: You will need to import the MoltenGL headers below the OpenGL headers
 #import <OpenGLES/ES2/gl.h>
 #import <MoltenGL/MoltenGL.h>
 #import <MoltenGL/EAGL.h>
@@ -22,17 +23,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    EAGLContext * context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2]; // 1
-    GLKView *view = [[GLKView alloc] initWithFrame:[[UIScreen mainScreen] bounds]]; // 2
-    view.context = context; // 3
-    view.delegate = self; // 4
-    [self.view addSubview:view]; // 5
-
+    EAGLContext * context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
+    GLKView *view = [[GLKView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    view.context = context;
+    view.delegate = self;
+    [self.view addSubview:view];
 }
 
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect {
-    // will got errors if uncomment the following lines
     glClearColor(1.0, 0.0, 0.0, 1.0);
     glClear(GL_COLOR_BUFFER_BIT);
 }
